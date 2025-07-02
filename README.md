@@ -1,22 +1,19 @@
 # JobTrackr Backend
 
-A Node.js Express backend for the JobTrackr platform. This service handles user authentication, resume parsing, and intelligent resume-job description matching using a connected Python microservice.
+Node.js + Express backend for JobTrackr, a resume-job matching and application tracking system. Connects to a Python microservice for intelligent keyword and semantic analysis.
 
-## 🚀 Features
+## Features
+- Resume upload and parsing
+- Integration with semantic matcher microservice
+- User authentication
+- MongoDB for storage
+- RESTful APIs
 
-- User registration and login (JWT-based)
-- Resume PDF upload and parsing
-- API integration with intelligent matcher microservice (FastAPI + BERT)
-- MongoDB database integration
-- Modular controller-service architecture
+## Setup
 
-## 🛠️ Technologies
-
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- JWT Auth
-- Axios (for Python microservice requests)
-- Multer (for file uploads)
-
+```bash
+git clone https://github.com/YOUR_USERNAME/jobtrackr-backend.git
+cd jobtrackr-backend
+npm install
+cp .env.example .env
+npm start
